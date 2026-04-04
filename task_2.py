@@ -18,7 +18,10 @@ def get_successful_students(students_list,passing_score=60):
             average_score = sum(scores.values())/len(scores.values())
             successful_students[name] = average_score
     return successful_students
-
+result = get_successful_students(students_math_results)
+print("список учів")
+for name, average_score in result.items():
+    print(f"{name}: {average_score}")
 
 
 
