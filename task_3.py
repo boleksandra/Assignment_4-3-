@@ -22,9 +22,10 @@ def analyze_methods(data):
         stats["total_time_ms"] += time_ms
         stats["iterations_count"] += 1
     return report
-
-
-
+final_report = analyze_methods(experiments_data)
+print("Звіт")
+for method in final_report:
+    print(f"• {method:12} | {final_report[method]}")
 
 
 
